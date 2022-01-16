@@ -8,7 +8,7 @@ def detect_object(frame):
     #names_path = os.path.abspath('yolo/obj.names')
 
     # Load Yolo
-    net = cv2.dnn_DetectionModel('yolov4.weights','yolov4-custom.cfg')
+    net = cv2.dnn_DetectionModel('yolov4-custom_last.weights','yolov4-custom.cfg')
     #net = cv2.dnn_DetectionModel(weights_path,cfg_path)
     net.setInputSize(256, 256)
     net.setInputScale(1.0 / 255)
@@ -20,7 +20,7 @@ def detect_object(frame):
     frame = cv2.resize(frame, dsize=(256, 256), interpolation=cv2.INTER_AREA)
 
     # with open('coco.names', 'rt') as f:
-    with open(obj.names, 'rt') as f:
+    with open('obj.names', 'rt') as f:
         names = f.read().rstrip('\n').split('\n')
 
     classes, confidences, boxes = net.detect(frame, confThreshold=0.1, nmsThreshold=0.4)
