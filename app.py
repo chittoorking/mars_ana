@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-from detection.object_detection import detect_object
+from object_detection import detect_object
 
 
 def main():
