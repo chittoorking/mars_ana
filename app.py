@@ -1,28 +1,119 @@
 import streamlit as st
 import numpy as np
-from PIL import Image, ImageOps
+from PIL import Image
 from object_detection import detect_object
 
 
-def main():
-    st.title("Object detection with YOLOv4")
-    img_array = upload_image_ui()
+    
+#st.balloons()
+option = st.sidebar.radio("Menu",['Home', 'About','Contributors'])
 
-    if isinstance(img_array, np.ndarray):
+
+if option == 'Home':
+      
+      col1,col2,col3 = st.columns([50,100,1])
+    
+      col2.image('chapter-logo.jpg')
+      #st.title('Omdena - Ahmedabad Chapter')
+      #st.header('Anamoly detection on Martian Surface')
+      html_temp = """
+        <div style="background-color:tomato;padding:10px">
+        <h2 style="color:white;text-align:center;">Anamoly Detection on Martian Surface</h2>
+        </div>
+        """
+      st.markdown(html_temp,unsafe_allow_html=True)
+      
+
+      def upload_image_ui():
+          uploaded_image = st.file_uploader("Please upload a martian surface image file", type=["png", "jpg", "jpeg"])
+          if uploaded_image is not None:
+            try:
+                image = Image.open(uploaded_image)
+            except Exception:
+                st.error("Error: Invalid image")
+            else:
+                img_array = np.array(image)
+                return img_array
+        
+      img_array = upload_image_ui()
+
+      if isinstance(img_array, np.ndarray):
         image = detect_object(img_array)
         st.image(image)
+        
+      
+      ana_type = st.sidebar.selectbox(
+        "To know more about Anamolies ",
+        ("Select an anamoly","Crater","Dark dune","Slope streak","Bright dune","Impact ejecta","Swiss cheese","Spider"))
+        
+      if ana_type == 'Crater':
+            image1 = Image.open('Anamolies-images/craters.jpg')
+            st.sidebar.image(image1, caption='Craters on Mars')
+            st.sidebar.write("Craters are caused when a bolide collides with a planet.The Martian surface contains thousands of impact craters because, unlike Earth, Mars has a stable crust, low erosion rate, and no active sources of lava")
+      
+      elif ana_type =='Dark dune':
+            image2 = Image.open('Anamolies-images/dark-dunes.jpg')
+            st.sidebar.image(image2, caption='Dark dunes on Mars')
+            st.sidebar.write("The dunes within and around the crater are thought to contain sandy material rich in pyroxene and olivine: rock forming minerals that are mafic(containing Magnesium and Iron)")
+            
+      elif ana_type =='Slope streak':
+            image3 = Image.open('Anamolies-images/slope-streak.jpg')
+            st.sidebar.image(image3, caption='Slope streak on Mars')
+            st.sidebar.write("Slope streaks are prevalent on the surface of the Mars,but they come in multitude of shapes and sizes.")
+            
+      elif ana_type =='Bright dune':
+            image4 = Image.open('Anamolies-images/bright-dune.jpg')
+            st.sidebar.image(image4, caption='Bright dune on Mars')
+            st.sidebar.write("These martian dunes are brighter and are composed of possibly sulphates.")
+      elif ana_type =='Impact ejecta':
+            image5 = Image.open('Anamolies-images/impact-ejecta.jpg')
+            st.sidebar.image(image5, caption='Impact ejecta on Mars')
+            st.sidebar.write("Impact ejecta is material that is thrown up and out of the surface of a planet as a result of the impact of an meteorite, asteroid or comet. The material that was originally beneath the surface of the planet then rains down onto the environs of the newly formed impact crater.")
+     
+      elif ana_type =='Swiss cheese':
+            image6 = Image.open('Anamolies-images/swiss-cheese.jpg')
+            st.sidebar.image(image6, caption='Swiss cheese on Mars')
+            st.sidebar.write("The Martian south polar cap is a layer of carbon dioxide ice, full of pits that make it look like Swiss cheese. The pits form when the Sun heats the ice and makes it sublimate (transform from a solid to a gas).")
+      
+      elif ana_type =='Spider':
+            image7 = Image.open('Anamolies-images/spiders.jpg')
+            st.sidebar.image(image7, caption='Spiders on Mars')
+            st.sidebar.write("Spiders are actually topological troughs formed when dry ice directly sublimates to a gas")
+         
 
-def upload_image_ui():
-    uploaded_image = st.file_uploader("Please choose an image file", type=["png", "jpg", "jpeg"])
-    if uploaded_image is not None:
-        try:
-            image = Image.open(uploaded_image)
-            image = ImageOps.grayscale(image)
-        except Exception:
-            st.error("Error: Invalid image")
-        else:
-            img_array = np.array(image)
-            return img_array
 
-if __name__ == '__main__':
-    main()
+
+if option == 'About':
+  html_temp = """
+        <div style="background-color:tomato;padding:10px">
+        <h2 style="color:white;text-align:center;">Anamoly Detection on Martian Surface</h2>
+        </div>
+        """
+  st.markdown(html_temp,unsafe_allow_html=True)
+  st.subheader("Here the project description goes")
+
+if option == 'Contributors':
+  html_temp = """
+        <div style="background-color:tomato;padding:10px">
+        <h2 style="color:white;text-align:center;">Team</h2>
+        </div>
+        """
+  st.markdown(html_temp,unsafe_allow_html=True)
+  st.subheader("Projet Manager")
+  st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
+  st.subheader("Contributors")
+  st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
+  st.write("2. [Harshal Hirpara](https://www.linkedin.com/in/harshaljhirpara)")
+  st.write("3. [Hardik Tejani]()")
+  st.write("4. [Girish Shahu](https://www.linkedin.com/in/girishsahu)")
+  st.write("5. [Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739)")
+  st.write("6. [Shreya Chawla]()")
+  st.write("7. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
+  st.write("8. [Kanak Tekwani](https://www.linkedin.com/in/kanak-tekwani/)")
+  st.write("9. [Adish Golechha]()")
+  st.write("10. [Avinash Das]()")
+  st.write("11. [Larry]()")
+  st.write("12. [Rik Dutta]()")
+
+
+
