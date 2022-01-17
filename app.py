@@ -163,15 +163,21 @@ if option == 'Contributors':
           .container {
           display: flex;
         }
-        .tanisha-img {
-             float:right;
-             margin: 0px 0px 0px 28px;
-        }
         .harshal-img {
             float:right;
             width:175px;
             height:192px;
             margin: 0px 0px 0px 28px;
+        }
+        .tanisha-img {
+             float:right;
+             margin: 0px 0px 0px 28px;
+        }
+        .girish-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
         }
         .kanak-img {
              float:right;
