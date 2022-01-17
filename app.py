@@ -9,7 +9,7 @@ import base64
 # option = st.sidebar.radio("Menu",['Home', 'About','Contributors'])
 st.sidebar.markdown('<h1 style="margin-left:8%; color:	#FF9933 ">Menu </h1>',
                     unsafe_allow_html=True)
-option = st.sidebar.radio(" ",('Home', 'About','Contributors'))
+option = st.sidebar.radio(" ",('Home', 'About Model','About Project','Contributors'))
 
 
 if option == 'Home':
@@ -137,10 +137,10 @@ if option == 'Home':
 
 
 
-if option == 'About':
+if option == 'About Model':
   html_temp = """
         <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Project Description</h2>
+        <h2 style="color:white;text-align:center;">Model Description</h2>
         </div>
         """
   st.markdown(html_temp,unsafe_allow_html=True)
@@ -172,6 +172,16 @@ if option == 'About':
   st.markdown('&nbsp; &nbsp; &nbsp; • Weight Decay: 0.005',unsafe_allow_html=True)
   st.markdown('• The authors also did an ablation study where one systematically removes parts of the input to see which parts of the input are relevant to the networks output.', unsafe_allow_html=True)
   st.markdown('• In a nutshell, YOLOv4 is faster in terms of Frames per Second (FPS) and more accurate on MS-COCO datasets than all available alternative detectors. So, YOLOv4 can be trained and used on a conventional GPU with 8-16GB VRAMs which are easily available.',unsafe_allow_html=True)
+
+if option == 'About Project':
+  html_temp = """
+        <div style="background-color:tomato;padding:10px">
+        <h2 style="color:white;text-align:center;">Project Description</h2>
+        </div>
+        """
+  st.markdown(html_temp,unsafe_allow_html=True)
+  st.text("")
+  st.text("")
 
 if option == 'Contributors':
       harshal_IMAGE = "harshal.jpg"
