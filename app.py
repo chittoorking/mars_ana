@@ -28,7 +28,7 @@ if option == 'Home':
       
 
       def upload_image_ui():
-          uploaded_image = st.file_uploader("Please upload a martian surface image file", type=["png", "jpg", "jpeg"])
+          uploaded_image = st.file_uploader(st.write("Please upload a martian surface image file"), type=["png", "jpg", "jpeg"])
           if uploaded_image is not None:
             try:
                 image = Image.open(uploaded_image)
