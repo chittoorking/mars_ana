@@ -68,8 +68,12 @@ if option == 'Home':
       img_array = upload_image_ui()
 
       if isinstance(img_array, np.ndarray):
-        image = detect_object(img_array)
+        image, instances = detect_object(img_array)
         st.image(image)
+        for instance in instances:
+              st.write(instances)
+              st.text("")
+              st.text("")
         
       
       ana_type = st.sidebar.selectbox(
