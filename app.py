@@ -182,7 +182,9 @@ if option == 'About Project':
   st.markdown(html_temp,unsafe_allow_html=True)
   st.text("")
   st.text("")
-  st.markdown('We have used YOLOv4 with pre-trained weights of ImageNet for training our Model on the dataset collected from here, ',unsafe_allow_html=True)
+  st.markdown('We have used YOLOv4 with pre-trained weights of ImageNet for training our Model on the dataset collected from here.',unsafe_allow_html=True)
+  st.markdown('There are total 7 classes in the dataset used for training namely, Craters, Spiders, Impact Ejects, Dark dunes, Bright dunes, Swiss Cheese and Slope Streaks.',unsafe_allow_html=True)
+  st.markdown('The dataset originates from the [Mars ODE](https://ode.rsl.wustl.edu/mars/) created by NASA which provides search, display, and download tools for the Planetary Data System science data archives and other data sets from the Mars Reconnaissance Orbiter (MRO), the 2001 Mars Odyssey and so on.',unsafe_allow_html=True)
 
 if option == 'Contributors':
       harshal_IMAGE = "harshal.jpg"
