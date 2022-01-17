@@ -16,6 +16,9 @@ if option == 'Home':
       col2.image('chapter-logo.jpg')
       #st.title('Omdena - Ahmedabad Chapter')
       #st.header('Anamoly detection on Martian Surface')
+      st.text("")
+      st.text("")
+      st.text("")
       html_temp = """
         <div style="background-color:tomato;padding:10px">
         <h2 style="color:white;text-align:center;">Anamoly Detection on Martian Surface</h2>
