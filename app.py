@@ -120,7 +120,7 @@ if option == 'Contributors':
         }
         .kanak-img {
              float:right;
-             width:151px;
+             width:175px;
              height:192px; 
         }
         .vamsi-img {
