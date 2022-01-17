@@ -73,7 +73,7 @@ if option == 'Home':
         image, instances = detect_object(img_array)
         st.image(image)
         for instance in instances:
-              st.write(instance)
+              st.caption(instance)
               st.text("")
               st.text("")
       # st.write(instances)
