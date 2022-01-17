@@ -92,7 +92,7 @@ if option == 'Home':
         image, instances, conf = detect_object(img_array)
         st.image(image)
         for instance, confidence in zip(instances, conf):
-              st.subheader("Our model is "+ str(round((confidence * 100), 2))+ "% sure that it is a " + instance.split(':')[0])
+              st.subheader("Our model is "+ str(round((confidence * 100), 2))+ "% sure that the image contains a " + instance.split(':')[0])
               st.text("")
         
       
