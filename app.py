@@ -21,7 +21,7 @@ if option == 'Home':
       st.text("")
       html_temp = """
         <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Anamoly Detection on Martian Surface</h2>
+        <h2 style="color:white;text-align:center;">Anomaly Detection on Martian Surface</h2>
         </div>
         """
       st.markdown(html_temp,unsafe_allow_html=True)
