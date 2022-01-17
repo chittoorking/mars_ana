@@ -318,7 +318,7 @@ if option == 'Contributors':
             """,
             unsafe_allow_html=True
       )
-      st.write("5. [Shreya Chawla]()")
+      st.write("5. [Shreya Chawla](https://www.linkedin.com/in/shreyachawla1998/)")
       st.write("6. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
       st.markdown(
             f"""
