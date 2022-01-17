@@ -120,12 +120,18 @@ if option == 'Contributors':
         }
         .kanak-img {
              float:right;
+             width:171px;
+             height:192px; 
         }
         .vamsi-img {
              float:right;
+             width:171px;
+             height:192px;
         }
         .venkat-img {
              float:right;
+             width:171px;
+             height:192px;
         }
         </style>
         """,
