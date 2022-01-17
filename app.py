@@ -142,8 +142,8 @@ if option == 'About':
         </div>
         """
   st.markdown(html_temp,unsafe_allow_html=True)
-  st.text(""
-  st.text(""))
+  st.text("")
+  st.text("")
   st.subheader("Here the project description goes")
 
 if option == 'Contributors':
