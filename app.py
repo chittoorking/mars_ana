@@ -22,7 +22,7 @@ if option == 'Home':
         }
         .logo-img1 {
              float:right;
-             width:300px;
+             width:350px;
              height:350px;
              margin: 0px 0px 0px 200px;
         }
