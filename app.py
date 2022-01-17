@@ -86,10 +86,10 @@ if option == 'Home':
       st.text("")
 
       if isinstance(img_array, np.ndarray):
-        image, instances = detect_object(img_array)
+        image, instances, conf = detect_object(img_array)
         st.image(image)
-        for instance in instances:
-              st.subheader(instance)
+        for instance, confidence in zip(instances, conf):
+              st.subheader("The model is ",conf," sure that it is a ", instance)
               st.text("")
               st.text("")
       # st.write(instances)
