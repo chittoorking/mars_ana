@@ -173,7 +173,7 @@ if option == 'Contributors':
         }
         .kanak-img {
              float:right;
-             width:178px;
+             width:184px;
              height:192px;
              margin: 0px 0px 0px 25px; 
         }
