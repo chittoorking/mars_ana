@@ -30,7 +30,7 @@ def detect_object(frame):
     # print("Cof:", confidences.flatten())
     instances = []
     conf = []
-    print(type(classes))
+    # print(type(classes))
     for classId, confidence, box in zip(classes.flatten(), confidences.flatten(), boxes):
         # print(classId, confidence, box)
         label = '%.2f' % confidence
@@ -49,6 +49,6 @@ def detect_object(frame):
         conf.append(confidence)
         cv2.putText(frame, label, (left, top), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
 
-    return frame, instances, conf
+    return frame, instances, conf, classes
     # cv2.imshow('out', frame)
     # cv2.waitKey()
