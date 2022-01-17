@@ -24,7 +24,7 @@ if option == 'Home':
              float:right;
              width:350px;
              height:350px;
-             margin: 0px 0px 0px 190px;
+             margin: 0px 0px 0px 170px;
         }
         </style>
         """,
