@@ -203,7 +203,7 @@ if option == 'Contributors':
       )
       st.markdown(html_temp,unsafe_allow_html=True)
       st.subheader("Project Manager")
-      st.write("• &nbsp;  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
+      st.write("• &nbsp;    [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
       st.markdown(
             f"""
             <div class="container">
