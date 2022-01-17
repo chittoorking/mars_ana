@@ -104,6 +104,31 @@ if option == 'Contributors':
             <h2 style="color:white;text-align:center;">Team</h2>
             </div>
             """
+      st.markdown(
+          """
+          <style>
+          .container {
+          display: flex;
+        }
+        .tanisha-img {
+             float:right;
+        }
+        .harshal-img {
+             float:right;
+        }
+        .kanak-img {
+             float:right;
+        }
+        .vamsi-img {
+             float:right;
+        }
+        .venkat-img {
+             float:right;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+      )
       st.markdown(html_temp,unsafe_allow_html=True)
       st.subheader("Projet Manager")
       st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
@@ -112,7 +137,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(tanisha_IMAGE, "rb").read()).decode()}">
+                  <img class="tanisha-img" src="data:image/png;base64,{base64.b64encode(open(tanisha_IMAGE, "rb").read()).decode()}">
             </div>
             """,
             unsafe_allow_html=True
@@ -121,7 +146,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(harshal_IMAGE, "rb").read()).decode()} width="500" height="500"">
+                  <img class="harshal-img" src="data:image/png;base64,{base64.b64encode(open(harshal_IMAGE, "rb").read()).decode()} width="500" height="500"">
             </div>
             """,
             unsafe_allow_html=True
@@ -130,7 +155,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(venkat_IMAGE, "rb").read()).decode()}">
+                  <img class="venkat-img" src="data:image/png;base64,{base64.b64encode(open(venkat_IMAGE, "rb").read()).decode()}">
             </div>
             """,
             unsafe_allow_html=True
@@ -141,7 +166,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(vamsi_IMAGE, "rb").read()).decode()}">
+                  <img class="vamsi-img" src="data:image/png;base64,{base64.b64encode(open(vamsi_IMAGE, "rb").read()).decode()}">
             </div>
             """,
             unsafe_allow_html=True
@@ -151,7 +176,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(kanak_IMAGE, "rb").read()).decode()}">
+                  <img class="kanak-img" src="data:image/png;base64,{base64.b64encode(open(kanak_IMAGE, "rb").read()).decode()}">
             </div>
             """,
             unsafe_allow_html=True
