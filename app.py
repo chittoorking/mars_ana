@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 from object_detection import detect_object
 
 
@@ -29,6 +29,7 @@ if option == 'Home':
           if uploaded_image is not None:
             try:
                 image = Image.open(uploaded_image)
+                image = ImageOps.grayscale(image)
             except Exception:
                 st.error("Error: Invalid image")
             else:
