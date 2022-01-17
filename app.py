@@ -89,10 +89,9 @@ if option == 'Home':
         image, instances, conf = detect_object(img_array)
         st.image(image)
         for instance, confidence in zip(instances, conf):
-              st.subheader("The model is "+ str(confidence)+ " sure that it is a " + instance)
+              st.subheader("The model is "+ str(round((confidence * 100), 2)+ " sure that it is a " + instance.split(':')[0])
               st.text("")
               st.text("")
-      st.write(instances)
         
       
       ana_type = st.sidebar.selectbox(
