@@ -31,6 +31,22 @@ if option == 'Home':
         unsafe_allow_html=True
       )
       st.markdown(
+          """
+          <style>
+          .container2 {
+          display: flex;
+        }
+        .img {
+             float:right;
+             width:300px;
+             height:350px;
+             margin: 0px 0px 0px 200px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+      )
+      st.markdown(
           f"""
           <div class="container1">
                <img class="logo-img1" src="data:image/jpg;base64,{base64.b64encode(open('chapter-logo.jpg', "rb").read()).decode()}">
@@ -71,7 +87,15 @@ if option == 'Home':
 
       if isinstance(img_array, np.ndarray):
         image, instances = detect_object(img_array)
-        st.image(image)
+        st.markdown(
+          f"""
+          <div class="container2">
+               <img class=img" src="data:image/jpg;base64,{base64.b64encode(open(image, "rb").read()).decode()}">
+          </div>
+          """,
+          unsafe_allow_html=True
+        )
+        #st.image(image)
         for instance in instances:
               st.subheader(instance)
               st.text("")
