@@ -112,7 +112,7 @@ if option == 'Contributors':
         }
         .tanisha-img {
              float:right;
-             margin: 0px 0px 0px 10px;
+             margin: 0px 0px 0px 15px;
         }
         .harshal-img {
             float:right;
