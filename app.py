@@ -152,6 +152,8 @@ if option == 'Contributors':
       venkat_IMAGE = "venkat.jpg"
       toshita_IMAGE = "toshita.jpeg"
       girish_IMAGE = "girish.jpeg"
+      adish_IMAGE = "adish.jpg"
+      avinash_IMAGE = "avinash.jpeg"
       html_temp = """
             <div style="background-color:tomato;padding:10px">
             <h2 style="color:white;text-align:center;">Team</h2>
@@ -162,6 +164,18 @@ if option == 'Contributors':
           <style>
           .container {
           display: flex;
+        }
+        .adish-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
+        }
+        .avinash-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
         }
         .harshal-img {
             float:right;
@@ -275,10 +289,26 @@ if option == 'Contributors':
             """,
             unsafe_allow_html=True
       )
-      st.write("9. [Adish Golechha]()")
-      st.write("10. [Avinash Das]()")
+      st.write("9. [Adish Golechha](https://www.linkedin.com/in/adish-golechha)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="adish-img" src="data:image/png;base64,{base64.b64encode(open(adish_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("10. [Avinash Das](https://www.linkedin.com/in/avinash-das-794b4b179/)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="avinash-img" src="data:image/png;base64,{base64.b64encode(open(avinash_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
       st.write("11. [Larry]()")
-      st.write("12. [Rik Dutta]()")
+      st.write("12. [Rik Dutta](https://www.linkedin.com/in/rik-dutta-b2673a17a/)")
 
 
 
