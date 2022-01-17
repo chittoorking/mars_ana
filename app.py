@@ -94,7 +94,6 @@ if option == 'Home':
         for instance, confidence in zip(instances, conf):
               st.subheader("The model is "+ str(round((confidence * 100), 2))+ "% sure that it is a " + instance.split(':')[0])
               st.text("")
-              st.text("")
         
       
       ana_type = st.sidebar.selectbox(
