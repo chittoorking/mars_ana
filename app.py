@@ -15,8 +15,21 @@ if option == 'Home':
     
       # col2.image('chapter-logo.jpg')
       st.markdown(
+          """
+          <style>
+          .container1 {
+          display: flex;
+        }
+        .logo-img {
+             float:right;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+      )
+      st.markdown(
           f"""
-          <div class="container">
+          <div class="container1">
                <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open('chapter-logo.jpg', "rb").read()).decode()}">
           </div>
           """,
