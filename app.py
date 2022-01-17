@@ -101,17 +101,17 @@ if option == 'Home':
       if ana_type == 'Crater':
             image1 = Image.open('Anamolies-images/craters.jpg')
             st.sidebar.image(image1, caption='Craters on Mars')
-            st.sidebar.write("Craters are caused when a bolide collides with a planet.The Martian surface contains thousands of impact craters because, unlike Earth, Mars has a stable crust, low erosion rate, and no active sources of lava")
+            st.sidebar.write("Craters are caused when a [bolide](https://en.wikipedia.org/wiki/Bolide) collides with a planet. The Martian surface contains thousands of impact craters because, unlike Earth, Mars has a stable crust, low erosion rate, and no active sources of lava")
       
       elif ana_type =='Dark dune':
             image2 = Image.open('Anamolies-images/dark-dunes.jpg')
             st.sidebar.image(image2, caption='Dark dunes on Mars')
-            st.sidebar.write("The dunes within and around the crater are thought to contain sandy material rich in pyroxene and olivine: rock forming minerals that are mafic(containing Magnesium and Iron)")
+            st.sidebar.write("The dunes within and around the crater are thought to contain sandy material rich in pyroxene and olivinew which are rock forming minerals that are mafic(containing Magnesium and Iron).")
             
       elif ana_type =='Slope streak':
             image3 = Image.open('Anamolies-images/slope-streak.jpg')
             st.sidebar.image(image3, caption='Slope streak on Mars')
-            st.sidebar.write("Slope streaks are prevalent on the surface of the Mars,but they come in multitude of shapes and sizes.")
+            st.sidebar.write("Slope streaks are prevalent on the surface of the Mars, but they come in multitude of shapes and sizes.")
             
       elif ana_type =='Bright dune':
             image4 = Image.open('Anamolies-images/bright-dune.jpg')
@@ -120,7 +120,7 @@ if option == 'Home':
       elif ana_type =='Impact ejecta':
             image5 = Image.open('Anamolies-images/impact-ejecta.jpg')
             st.sidebar.image(image5, caption='Impact ejecta on Mars')
-            st.sidebar.write("Impact ejecta is material that is thrown up and out of the surface of a planet as a result of the impact of an meteorite, asteroid or comet. The material that was originally beneath the surface of the planet then rains down onto the environs of the newly formed impact crater.")
+            st.sidebar.write("Impact ejecta is a material that is thrown up and out of the surface of the planet as a result of the impact of an meteorite, asteroid or comet. The material that was originally beneath the surface of the planet then rains down onto the environs of the newly formed impact crater.")
      
       elif ana_type =='Swiss cheese':
             image6 = Image.open('Anamolies-images/swiss-cheese.jpg')
@@ -130,7 +130,7 @@ if option == 'Home':
       elif ana_type =='Spider':
             image7 = Image.open('Anamolies-images/spiders.jpg')
             st.sidebar.image(image7, caption='Spiders on Mars')
-            st.sidebar.write("Spiders are actually topological troughs formed when dry ice directly sublimates to a gas")
+            st.sidebar.write("Spiders are actually topological troughs formed when dry ice directly sublimates to a gas.")
          
 
 
