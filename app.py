@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 from PIL import Image, ImageOps
 from object_detection import detect_object
-
+import base64
 
     
 #st.balloons()
