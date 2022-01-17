@@ -20,7 +20,7 @@ if option == 'Home':
           .container1 {
           display: flex;
         }
-        .logo-img {
+        .logo-img1 {
              float:right;
         }
         </style>
@@ -30,7 +30,7 @@ if option == 'Home':
       st.markdown(
           f"""
           <div class="container1">
-               <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open('chapter-logo.jpg', "rb").read()).decode()}">
+               <img class="logo-img1" src="data:image/jpg;base64,{base64.b64encode(open('chapter-logo.jpg', "rb").read()).decode()}">
           </div>
           """,
           unsafe_allow_html=True
