@@ -94,27 +94,72 @@ if option == 'About':
   st.subheader("Here the project description goes")
 
 if option == 'Contributors':
-  html_temp = """
-        <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Team</h2>
-        </div>
-        """
-  st.markdown(html_temp,unsafe_allow_html=True)
-  st.subheader("Projet Manager")
-  st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
-  st.subheader("Contributors")
-  st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
-  st.write("2. [Harshal Hirpara](https://www.linkedin.com/in/harshaljhirpara)")
-  st.write("3. [Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739)")
-  st.write("4. [Girish Sahu](https://www.linkedin.com/in/girishsahu)")
-  st.write("5. [Shreya Chawla]()")
-  st.write("6. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
-  st.write("7. [Hardik Tejani](https://www.linkedin.com/in/hardik-tejani)")  
-  st.write("8. [Kanak Tekwani](https://www.linkedin.com/in/kanak-tekwani/)")
-  st.write("9. [Adish Golechha]()")
-  st.write("10. [Avinash Das]()")
-  st.write("11. [Larry]()")
-  st.write("12. [Rik Dutta]()")
+      harshal_IMAGE = "harshal.jpg"
+      kanak_IMAGE = "kanak.jpg"
+      tanisha_IMAGE = "tanisha.jpeg"
+      vamsi_IMAGE = "vamsi.jpg"
+      venkat_IMAGE = "venkat.jpg"
+      html_temp = """
+            <div style="background-color:tomato;padding:10px">
+            <h2 style="color:white;text-align:center;">Team</h2>
+            </div>
+            """
+      st.markdown(html_temp,unsafe_allow_html=True)
+      st.subheader("Projet Manager")
+      st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
+      st.subheader("Contributors")
+      st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(tanisha_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("2. [Harshal Hirpara](https://www.linkedin.com/in/harshaljhirpara)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(harshal_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("3. [Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(venkat_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("4. [Girish Sahu](https://www.linkedin.com/in/girishsahu)")
+      st.write("5. [Shreya Chawla]()")
+      st.write("6. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(vamsi_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("7. [Hardik Tejani](https://www.linkedin.com/in/hardik-tejani)")  
+      st.write("8. [Kanak Tekwani](https://www.linkedin.com/in/kanak-tekwani/)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(kanak_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
+      st.write("9. [Adish Golechha]()")
+      st.write("10. [Avinash Das]()")
+      st.write("11. [Larry]()")
+      st.write("12. [Rik Dutta]()")
 
 
 
