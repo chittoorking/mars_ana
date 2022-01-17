@@ -66,6 +66,8 @@ if option == 'Home':
                 return img_array
         
       img_array = upload_image_ui()
+      st.text("")
+      st.text("")
 
       if isinstance(img_array, np.ndarray):
         image, instances = detect_object(img_array)
