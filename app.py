@@ -323,7 +323,6 @@ if option == 'Contributors':
             unsafe_allow_html=True
       )
       st.write("11. [Larry]()")
-      st.write("12. [Rik Dutta](https://www.linkedin.com/in/rik-dutta-b2673a17a/)")
 
 
 
