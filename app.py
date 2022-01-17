@@ -241,6 +241,14 @@ if option == 'Contributors':
             unsafe_allow_html=True
       )
       st.write("4. [Girish Sahu](https://www.linkedin.com/in/girishsahu)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="girish-img" src="data:image/png;base64,{base64.b64encode(open(girish_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
       st.write("5. [Shreya Chawla]()")
       st.write("6. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
       st.markdown(
