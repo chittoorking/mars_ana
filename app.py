@@ -87,16 +87,7 @@ if option == 'Home':
 
       if isinstance(img_array, np.ndarray):
         image, instances = detect_object(img_array)
-        image = Image.fromarray(image)
-        st.markdown(
-          f"""
-          <div class="container2">
-               <img class=img" src="data:image/jpg;base64,{base64.b64encode(open(image, "rb").read()).decode()}">
-          </div>
-          """,
-          unsafe_allow_html=True
-        )
-        #st.image(image)
+        st.image(image)
         for instance in instances:
               st.subheader(instance)
               st.text("")
