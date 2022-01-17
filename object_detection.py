@@ -52,6 +52,6 @@ def detect_object(frame):
     except:
         pass
 
-    return cv2.cvtColor(frame, cv2.COLOR_GRAY2RGB), instances, conf
+    return frame, instances, conf
     # cv2.imshow('out', frame)
     # cv2.waitKey()
