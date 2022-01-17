@@ -154,6 +154,7 @@ if option == 'Contributors':
       girish_IMAGE = "girish.jpeg"
       adish_IMAGE = "adish.jpg"
       avinash_IMAGE = "avinash.jpeg"
+      hardik_IMAGE = "hardik.jpeg"
       html_temp = """
             <div style="background-color:tomato;padding:10px">
             <h2 style="color:white;text-align:center;">Team</h2>
@@ -172,6 +173,12 @@ if option == 'Contributors':
              margin: 0px 0px 0px 28px;
         }
         .avinash-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
+        }
+        .hardik-img {
              float:right;
              width:175px;
              height:192px;
@@ -279,7 +286,15 @@ if option == 'Contributors':
             """,
             unsafe_allow_html=True
       )
-      st.write("7. [Hardik Tejani](https://www.linkedin.com/in/hardik-tejani)")  
+      st.write("7. [Hardik Tejani](https://www.linkedin.com/in/hardik-tejani)") 
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="hardik-img" src="data:image/png;base64,{base64.b64encode(open(hardik_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      ) 
       st.write("8. [Kanak Tekwani](https://www.linkedin.com/in/kanak-tekwani/)")
       st.markdown(
             f"""
