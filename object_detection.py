@@ -30,6 +30,7 @@ def detect_object(frame):
     # print("Cof:", confidences.flatten())
     instances = []
     conf = []
+    print(type(classes))
     for classId, confidence, box in zip(classes.flatten(), confidences.flatten(), boxes):
         # print(classId, confidence, box)
         label = '%.2f' % confidence
