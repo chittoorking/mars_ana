@@ -138,13 +138,13 @@ if option == 'Home':
 if option == 'About':
   html_temp = """
         <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Anamoly Detection on Martian Surface</h2>
+        <h2 style="color:white;text-align:center;">Project Description</h2>
         </div>
         """
   st.markdown(html_temp,unsafe_allow_html=True)
   st.text("")
   st.text("")
-  st.subheader("Here the project description goes")
+  st.subheader("Here the project description goes: ")
 
 if option == 'Contributors':
       harshal_IMAGE = "harshal.jpg"
