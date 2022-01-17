@@ -70,7 +70,7 @@ if option == 'Home':
       if isinstance(img_array, np.ndarray):
         image, instances = detect_object(img_array)
         st.image(image)
-        for instance in instances[0]:
+        for instance in instances:
               st.write(instance)
               st.text("")
               st.text("")
