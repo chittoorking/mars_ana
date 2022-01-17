@@ -9,7 +9,7 @@ import base64
 # option = st.sidebar.radio("Menu",['Home', 'About','Contributors'])
 st.sidebar.markdown('<h1 style="margin-left:8%; color:	#FF9933 ">Menu </h1>',
                     unsafe_allow_html=True)
-option = st.sidebar.radio("",['Home', 'About','Contributors'])
+option = st.sidebar.radio("",('Home', 'About','Contributors'))
 
 
 if option == 'Home':
