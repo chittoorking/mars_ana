@@ -106,7 +106,7 @@ if option == 'Contributors':
   st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
   st.write("2. [Harshal Hirpara](https://www.linkedin.com/in/harshaljhirpara)")
   st.write("3. [Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739)")
-  st.write("4. [Girish Shahu](https://www.linkedin.com/in/girishsahu)")
+  st.write("4. [Girish Sahu](https://www.linkedin.com/in/girishsahu)")
   st.write("5. [Shreya Chawla]()")
   st.write("6. [Vamsi Chittor](https://www.linkedin.com/in/vamsi-chittoor-331b80189)")
   st.write("7. [Hardik Tejani](https://www.linkedin.com/in/hardik-tejani)")  
