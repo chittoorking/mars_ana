@@ -194,7 +194,7 @@ if option == 'Contributors':
         unsafe_allow_html=True
       )
       st.markdown(html_temp,unsafe_allow_html=True)
-      st.subheader("Projet Manager")
+      st.subheader("Project Manager")
       st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
       st.subheader("Contributors")
       st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
