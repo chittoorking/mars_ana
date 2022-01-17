@@ -73,6 +73,8 @@ if option == 'Home':
         image, instances = detect_object(img_array)
         st.image(image)
         for instance in instances:
+              text = '<h1 style="font-family:sans-serif; color:Green; font-size: 42px;">{{instance}}</h1>'
+              st.markdown(text, unsafe_allow_html=True)
               st.text(instance)
               st.text("")
               st.text("")
