@@ -30,25 +30,28 @@ def detect_object(frame):
     # print("Cof:", confidences.flatten())
     instances = []
     conf = []
-    # print(type(classes))
-    for classId, confidence, box in zip(classes.flatten(), confidences.flatten(), boxes):
-        # print(classId, confidence, box)
-        label = '%.2f' % confidence
-        label = '%s: %s' % (names[classId], label)
-        labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1) # fontScale: 0.5, thickness: 1
-        # print(labelSize, baseLine)
-        left, top, width, height = box
-        # print("T:", top)
-        top = max(top, labelSize[1])
-        # print("MT:", top)
-        cv2.rectangle(frame, box, color=(0, 255, 0), thickness=3)
-        # Draw rectangle for labels
-        cv2.rectangle(frame, (left, top - labelSize[1]), (left + labelSize[0], top + baseLine),
-                      (255, 255, 255), cv2.FILLED)
-        instances.append(label)
-        conf.append(confidence)
-        cv2.putText(frame, label, (left, top), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
+    try:
+        # print(type(classes))
+        for classId, confidence, box in zip(classes.flatten(), confidences.flatten(), boxes):
+            # print(classId, confidence, box)
+            label = '%.2f' % confidence
+            label = '%s: %s' % (names[classId], label)
+            labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1) # fontScale: 0.5, thickness: 1
+            # print(labelSize, baseLine)
+            left, top, width, height = box
+            # print("T:", top)
+            top = max(top, labelSize[1])
+            # print("MT:", top)
+            cv2.rectangle(frame, box, color=(0, 255, 0), thickness=3)
+            # Draw rectangle for labels
+            cv2.rectangle(frame, (left, top - labelSize[1]), (left + labelSize[0], top + baseLine),
+                        (255, 255, 255), cv2.FILLED)
+            instances.append(label)
+            conf.append(confidence)
+            cv2.putText(frame, label, (left, top), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
+    except:
+        pass
 
-    return frame, instances, conf, classes
+    return frame, instances, conf
     # cv2.imshow('out', frame)
     # cv2.waitKey()
