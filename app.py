@@ -25,7 +25,9 @@ if option == 'Home':
         </div>
         """
       st.markdown(html_temp,unsafe_allow_html=True)
-      
+      st.text("")
+      st.text("")
+      st.text("")
 
       def upload_image_ui():
           uploaded_image = st.file_uploader("Please upload a martian surface image file", type=["png", "jpg", "jpeg"])
