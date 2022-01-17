@@ -150,6 +150,8 @@ if option == 'Contributors':
       tanisha_IMAGE = "tanisha.jpeg"
       vamsi_IMAGE = "vamsi.jpg"
       venkat_IMAGE = "venkat.jpg"
+      toshita_IMAGE = "toshita.jpeg"
+      girish_IMAGE = "girish.jpeg"
       html_temp = """
             <div style="background-color:tomato;padding:10px">
             <h2 style="color:white;text-align:center;">Team</h2>
@@ -177,6 +179,12 @@ if option == 'Contributors':
              height:192px;
              margin: 0px 0px 0px 25px; 
         }
+        .toshita-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
+        }
         .vamsi-img {
              float:right;
              width:175px;
@@ -195,7 +203,15 @@ if option == 'Contributors':
       )
       st.markdown(html_temp,unsafe_allow_html=True)
       st.subheader("Project Manager")
-      st.write("  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
+      st.write("•  [Toshita Sharma](https://www.linkedin.com/in/toshita-sharma-79894a1a4/)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="toshita-img" src="data:image/png;base64,{base64.b64encode(open(toshita_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
       st.subheader("Contributors")
       st.write("1. [Tanisha Banik](https://www.linkedin.com/in/tanisha-banik-04b511173/)")
       st.markdown(
