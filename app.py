@@ -13,7 +13,15 @@ if option == 'Home':
       
       col1,col2,col3 = st.columns([50,100,1])
     
-      col2.image('chapter-logo.jpg')
+      # col2.image('chapter-logo.jpg')
+      st.markdown(
+          f"""
+          <div class="container">
+               <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open('chapter-logo.jpg', "rb").read()).decode()}">
+          </div>
+          """,
+          unsafe_allow_html=True
+      )
       #st.title('Omdena - Ahmedabad Chapter')
       #st.header('Anamoly detection on Martian Surface')
       st.text("")
