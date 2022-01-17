@@ -22,9 +22,9 @@ if option == 'Home':
         }
         .logo-img1 {
              float:right;
-             width:175px;
-             height:192px;
-             margin: 0px 0px 0px 50px;
+             width:200px;
+             height:300px;
+             margin: 0px 0px 0px 100px;
         }
         </style>
         """,
