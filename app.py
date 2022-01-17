@@ -112,13 +112,13 @@ if option == 'Contributors':
         }
         .tanisha-img {
              float:right;
-             margin: 0px 0px 0px 25px;
+             margin: 0px 0px 0px 28px;
         }
         .harshal-img {
             float:right;
             width:175px;
             height:192px;
-            margin: 0px 0px 0px 25px;
+            margin: 0px 0px 0px 28px;
         }
         .kanak-img {
              float:right;
@@ -130,13 +130,13 @@ if option == 'Contributors':
              float:right;
              width:175px;
              height:192px;
-             margin: 0px 0px 0px 25px;
+             margin: 0px 0px 0px 28px;
         }
         .venkat-img {
              float:right;
              width:175px;
              height:192px;
-             margin: 0px 0px 0px 25px;
+             margin: 0px 0px 0px 28px;
         }
         </style>
         """,
