@@ -120,12 +120,12 @@ if option == 'Home':
       elif ana_type =='Impact ejecta':
             image5 = Image.open('Anamolies-images/impact-ejecta.jpg')
             st.sidebar.image(image5, caption='Impact ejecta on Mars')
-            st.sidebar.write("Impact ejecta is a material that is thrown up and out of the surface of the planet as a result of the impact of an meteorite, asteroid or comet. The material that was originally beneath the surface of the planet then rains down onto the environs of the newly formed impact crater.")
+            st.sidebar.write("Impact ejecta is a material that is thrown up and out of the surface of the planet as a result of the impact of an [meteorite](https://en.wikipedia.org/wiki/Meteorite), [asteroid](https://en.wikipedia.org/wiki/Asteroid) or [comet](https://en.wikipedia.org/wiki/Comet). The material that was originally beneath the surface of the planet then rains down onto the environs of the newly formed impact crater.")
      
       elif ana_type =='Swiss cheese':
             image6 = Image.open('Anamolies-images/swiss-cheese.jpg')
             st.sidebar.image(image6, caption='Swiss cheese on Mars')
-            st.sidebar.write("The Martian south polar cap is a layer of carbon dioxide ice, full of pits that make it look like Swiss cheese. The pits form when the Sun heats the ice and makes it sublimate (transform from a solid to a gas).")
+            st.sidebar.write("The [Martian south polar cap](https://en.wikipedia.org/wiki/Martian_polar_ice_caps) is a layer of carbon dioxide ice, full of pits that make it look like Swiss cheese. The pits form when the Sun heats the ice and makes it sublimate (transform from a solid to a gas).")
       
       elif ana_type =='Spider':
             image7 = Image.open('Anamolies-images/spiders.jpg')
