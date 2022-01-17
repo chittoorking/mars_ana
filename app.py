@@ -112,27 +112,31 @@ if option == 'Contributors':
         }
         .tanisha-img {
              float:right;
-             margin: 0px 0px 0px 15px;
+             margin: 0px 0px 0px 20px;
         }
         .harshal-img {
             float:right;
             width:175px;
             height:192px;
+            margin: 0px 0px 0px 20px;
         }
         .kanak-img {
              float:right;
              width:175px;
-             height:192px; 
+             height:192px;
+             margin: 0px 0px 0px 20px; 
         }
         .vamsi-img {
              float:right;
              width:175px;
              height:192px;
+             margin: 0px 0px 0px 20px;
         }
         .venkat-img {
              float:right;
              width:175px;
              height:192px;
+             margin: 0px 0px 0px 20px;
         }
         </style>
         """,
