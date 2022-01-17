@@ -148,7 +148,7 @@ if option == 'Contributors':
       st.markdown(
             f"""
             <div class="container">
-                  <img class="harshal-img" src="data:image/png;base64,{base64.b64encode(open(harshal_IMAGE, "rb").read()).decode()} width="500" height="500"">
+                  <img class="harshal-img" src="data:image/png;base64,{base64.b64encode(open(harshal_IMAGE, "rb").read()).decode()}">
             </div>
             """,
             unsafe_allow_html=True
