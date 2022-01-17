@@ -115,8 +115,8 @@ if option == 'Contributors':
         }
         .harshal-img {
             float:right;
-            width:400px;
-            height:200px;
+            width:171px;
+            height:192px;
         }
         .kanak-img {
              float:right;
