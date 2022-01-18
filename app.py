@@ -364,7 +364,14 @@ if option == 'Contributors':
             """,
             unsafe_allow_html=True
       )
-      st.write("11. [Larry]()")
-
+      st.write("11. [Larry](https://www.linkedin.com/in/larry-pallozzi/)")
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="avinash-img" src="data:image/png;base64,{base64.b64encode(open(avinash_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
 
 
