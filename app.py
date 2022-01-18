@@ -251,7 +251,7 @@ if option == 'Contributors':
         }
         .larry-img {
              float:right;
-             width:175px;
+             width:180px;
              height:192px;
              margin: 0px 0px 0px 28px;
         }
