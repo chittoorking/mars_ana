@@ -197,6 +197,7 @@ if option == 'Contributors':
       adish_IMAGE = "adish.jpg"
       avinash_IMAGE = "avinash.jpeg"
       hardik_IMAGE = "hardik.jpeg"
+      larry_IMAGE = "larry.jpg"
       html_temp = """
             <div style="background-color:tomato;padding:10px">
             <h2 style="color:white;text-align:center;">Team</h2>
@@ -247,6 +248,12 @@ if option == 'Contributors':
              width:184px;
              height:192px;
              margin: 0px 0px 0px 25px; 
+        }
+        .larry-img {
+             float:right;
+             width:175px;
+             height:192px;
+             margin: 0px 0px 0px 28px;
         }
         .toshita-img {
              float:right;
@@ -365,13 +372,13 @@ if option == 'Contributors':
             unsafe_allow_html=True
       )
       st.write("11. [Larry](https://www.linkedin.com/in/larry-pallozzi/)")
-      # st.markdown(
-      #       f"""
-      #       <div class="container">
-      #             <img class="avinash-img" src="data:image/png;base64,{base64.b64encode(open(avinash_IMAGE, "rb").read()).decode()}">
-      #       </div>
-      #       """,
-      #       unsafe_allow_html=True
-      # )
+      st.markdown(
+            f"""
+            <div class="container">
+                  <img class="larry-img" src="data:image/png;base64,{base64.b64encode(open(larry_IMAGE, "rb").read()).decode()}">
+            </div>
+            """,
+            unsafe_allow_html=True
+      )
 
 
